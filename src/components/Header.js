@@ -1,5 +1,5 @@
-import React, {PropTypes} from 'react';
-import { observer } from 'mobx-react';
+import React, {PropTypes} from 'react'
+import { observer } from 'mobx-react'
 
 const Header = observer((props, {store}) => (
   <div className="head">
@@ -22,6 +22,6 @@ const Header = observer((props, {store}) => (
 
 Header.contextTypes = {
   store: PropTypes.object
-};
+}
 
-export default Header;
+export default Header

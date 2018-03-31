@@ -1,14 +1,14 @@
-import React, {PropTypes} from 'react';
+import React, {PropTypes} from 'react'
 
 export default class Provider extends React.Component {
 
   static propTypes = {
     store: PropTypes.object.isRequired,
-  };
+  }
 
   static childContextTypes = {
     store: PropTypes.object,
-  };
+  }
 
   getChildContext() {
     return {
@@ -17,6 +17,6 @@ export default class Provider extends React.Component {
   }
 
   render() {
-    return this.props.children;
+    return this.props.children
   }
 }

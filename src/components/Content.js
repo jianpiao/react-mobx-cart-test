@@ -1,20 +1,17 @@
-import React, {PropTypes} from 'react';
-import {observer} from 'mobx-react';
-
-
-
+import React, {PropTypes} from 'react'
+import {observer} from 'mobx-react'
 
 
 @observer
 export default class CartItem extends React.Component {
 
-  static contextTypes = {
-    store: PropTypes.object,
-  };
-
   static propTypes = {
     data: PropTypes.object,
-  };
+  }
+
+  static contextTypes = {
+    store: PropTypes.object,
+  }
 
 
 
@@ -38,11 +35,11 @@ export default class CartItem extends React.Component {
         <div className="cart-item-box c-buyNum">
           <div onClick={() => store.sub(data.id)}>-</div>
           <input
-            value={data.buyNum}
+            value={data.number}
           />
           <div onClick={() => store.add(data.id)}>+</div>
         </div>
-        <div className="cart-item-box c-subTotal">¥{data.price * data.buyNum}</div>
+        <div className="cart-item-box c-subTotal">¥{data.price * data.number}</div>
         <div className="cart-item-box c-delete" onClick={() => store.removeItem(data.id)}>删除</div>
       </div>
     );

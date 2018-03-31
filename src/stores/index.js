@@ -40,12 +40,12 @@ export default class AppState {
 
   //  增加数量
   @action add = (id) => {
-    this.list.forEach(item => item.id === id && item.buyNum++);
+    this.list.forEach(item => item.id === id && item.number++);
   };
 
   //  减少数量
   @action sub = (id) => {
-    this.list.forEach(item => (item.id === id && item.buyNum > 0) && item.buyNum--);
+    this.list.forEach(item => (item.id === id && item.number > 0) && item.number--);
   };
 
   //  点击单个选中 改变状态
@@ -69,12 +69,10 @@ export default class AppState {
 
   //  计算合计
   @computed get totalPrice() {
-    console.log('计算总和')
-
     let total = 0;
     this.list.forEach((item, i) => {
       if (item.checked) {
-        total += this.list[i].buyNum * this.list[i].price;
+        total += this.list[i].number * this.list[i].price;
       }
     });
     return total;

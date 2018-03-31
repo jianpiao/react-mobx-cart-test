@@ -5,7 +5,7 @@ export const data = [
     type: "数码类产品",
     description: "手机",
     price: 3899,
-    buyNum: 1,
+    number: 1,
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const data = [
     type: "数码类产品",
     description: "手机",
     price: 4600,
-    buyNum: 2,
+    number: 2,
   },
   {
     id: 3,
@@ -21,27 +21,27 @@ export const data = [
     type: "数码类产品",
     description: "手机",
     price: 2299,
-    buyNum: 1,
+    number: 1,
   }, {
     id: 4,
     name: "OPPOR15",
     type: "数码类产品",
     description: "手机",
     price: 3299,
-    buyNum: 1,
+    number: 1,
   }, {
     id: 5,
     name: "X21",
     type: "数码类产品",
     description: "手机",
     price: 2198,
-    buyNum: 1,
+    number: 1,
   }, {
     id: 6,
     name: "三星S9",
     type: "数码类产品",
     description: "手机",
     price: 5799,
-    buyNum: 1,
+    number: 1,
   }
 ];
