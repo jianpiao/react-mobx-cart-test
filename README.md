@@ -6,4 +6,4 @@
 
 # 就可以直接运行了   
 
-![image](https://github.com/Yesi-hoang/TaoBaoTopLine/blob/master/Gif/TaoBaoTopLineGif.gif)
+![image](https://github.com/jianpiao/react-mobx-cart-test/blob/master/gif/react-mobx.gif)
